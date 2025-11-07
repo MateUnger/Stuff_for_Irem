@@ -1,0 +1,11 @@
+# file types that wont be tracked by Git
+*.svo
+*.svo2
+*.avi
+*.mp4
+*.npy
+*.npz
+*.tsv
+
+# pycache folders
+**/__pycache__/
