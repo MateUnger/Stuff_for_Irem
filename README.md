@@ -1,29 +1,18 @@
-# vGait
-gait analysis using markerless 3D motion data.
-
-## Features
-
-- Markerless motion data filtering and processing.
-- Walking direction estimation and step event detection.
-- Gait parameter analysis (stride time, stride length, velocity, and more).
-
-
 ## Files and Folders
 
 - `utils.py`: Contains core functions for gait analysis and processing.
 - `vGait.py`: Main script for running gait analysis workflows.
 - `properties.json`: Configuration file with gait analysis parameters.
-- `sample_datasets`: Folder for storing sample `.npz` datasets.
 
-## Requirements
+## What to do?
 
-- Python 3.8+
-- Required libraries: `numpy`, `pandas`, `scipy`
+1. export relevant reconding from Qualisys Tracking Manager thingy in .tsv (
+tab-separated-values). Also get the start and stop .json files for synch.
 
-## Installation
+2. use "process_qualisys_data.ipynb" to parse metadata and marker data from files
 
-Clone the repository:
+3. use vGait.py to analyze the marker positions (all helper functions should be in utils.py)
 
-```bash
-git clone https://github.com/DSGZ-MotionLab/vGait.git
-cd vGait
+4. (optional) visualize the results with vis.py (no need to perfom gait analysis in advance, it is included in vis.py)
+
+5. (optional) ask Máté if you are stuck with something (vscode, virtual env, any of the steps/scripts)
